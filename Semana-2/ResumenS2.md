@@ -1,4 +1,5 @@
 ## Getting Started - Cormen et al. (2022)
+
 Este capítulo introduce los conceptos fundamentales de los algoritmos y su análisis. Se enfoca en cómo diseñar algoritmos eficientes y cómo evaluar su rendimiento. También explica la importancia de los algoritmos en la informática y cómo afectan el desempeño de los sistemas computacionales.
 
 **2.1 Insertion Sort**
@@ -14,7 +15,8 @@ El ordenamiento por inserción es un algoritmo simple y eficiente para ordenar p
 - Es eficiente para listas pequeñas y cuando los datos están casi ordenados.
 
   
-2.2 Analyzing Algorithms
+**2.2 Analyzing Algorithms**
+
 El análisis de algoritmos es crucial para determinar su eficiencia y aplicabilidad. Este subtema introduce herramientas matemáticas para evaluar el rendimiento de los algoritmos.
 
 **Notación asintótica:**
@@ -39,5 +41,5 @@ Ejemplos de algoritmos elementales
 Se presentan estrategias como búsqueda secuencial y binaria, ordenamiento por inserción y selección, y estructuras de datos básicas como listas y árboles.
 Puedes consultar más información en esta referencia.
 
-Si necesitas más detalles o ejemplos específicos, dime qué aspecto te interesa más. 😃
+
 
