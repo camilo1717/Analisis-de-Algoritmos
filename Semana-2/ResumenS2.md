@@ -2,7 +2,7 @@
 
 Este capítulo introduce los conceptos fundamentales de los algoritmos y su análisis. Se enfoca en cómo diseñar algoritmos eficientes y cómo evaluar su rendimiento. También explica la importancia de los algoritmos en la informática y cómo afectan el desempeño de los sistemas computacionales.
 
-**2.1 Insertion Sort**
+**2.1 Insertion Sort:**
 
 El ordenamiento por inserción es un algoritmo simple y eficiente para ordenar pequeñas cantidades de datos. Funciona de manera similar a cómo una persona ordena cartas en su mano: toma cada elemento y lo inserta en la posición correcta dentro de la parte ordenada de la lista.
 
