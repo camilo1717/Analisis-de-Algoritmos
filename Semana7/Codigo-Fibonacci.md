@@ -18,3 +18,10 @@ public class Fibonacci {
     }
 }
 ```
+## Identificar las Recurrencias:
+
+La recurrencia del algoritmo de Fibonacci es:
+
+                             **T(n)=T(n−1)+T(n−2)+O(1)**
+                             
+esto es debido a que, por cada llamada a fibonacci(n) realiza dos llamadas recursivas: fibonacci(n-1) y fibonacci(n-2)
