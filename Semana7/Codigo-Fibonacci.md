@@ -28,5 +28,6 @@ esto es debido a que, por cada llamada a fibonacci(n) realiza dos llamadas recur
 
 ## Obtener la Ecuación General y Comprobar:
 
-![WhatsApp Image 2025-05-27 at 23 36 01](https://github.com/user-attachments/assets/e5c8f8f2-2ef1-4647-8840-646726a24a57)
+![WhatsApp Image 2025-05-27 at 23 39 32](https://github.com/user-attachments/assets/571b27fd-d3f7-412b-bb3e-a4269e82d4ff)
+
 
