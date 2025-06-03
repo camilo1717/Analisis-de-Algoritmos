@@ -1,580 +1,78 @@
-Parte 1: Comprobar si
-𝑓
-(
-𝑛
-)
-=
-𝑛
-3
-+
-9
-𝑛
-2
-log
-⁡
-(
-𝑛
-)
-∈
-𝑂
-(
-𝑔
-(
-𝑛
-)
-)
-f(n)=n 
-3
- +9n 
-2
- log(n)∈O(g(n)), con 
-𝑔
-(
-𝑛
-)
-=
-𝑛
-2
-log
-⁡
-(
-𝑛
-)
-g(n)=n 
-2
- log(n)
+# Análisis de Complejidad Asintótica
 
-Evaluamos el límite del cociente:
-lim
-⁡
-𝑛
-→
-∞
-𝑓
-(
-𝑛
-)
-𝑔
-(
-𝑛
-)
-=
-𝑛
-3
-+
-9
-𝑛
-2
-log
-⁡
-(
-𝑛
-)
-𝑛
-2
-log
-⁡
-(
-𝑛
-)
-=
-𝑛
-3
-𝑛
-2
-log
-⁡
-(
-𝑛
-)
-+
-9
-𝑛
-2
-log
-⁡
-(
-𝑛
-)
-𝑛
-2
-log
-⁡
-(
-𝑛
-)
-=
-𝑛
-log
-⁡
-(
-𝑛
-)
-+
-9
-n→∞
-lim
-​
-  
-g(n)
-f(n)
-​
- = 
-n 
-2
- log(n)
-n 
-3
- +9n 
-2
- log(n)
-​
- = 
-n 
-2
- log(n)
-n 
-3
- 
-​
- + 
-n 
-2
- log(n)
-9n 
-2
- log(n)
-​
- = 
-log(n)
-n
-​
- +9
-Análisis:
-lim
-⁡
-𝑛
-→
-∞
-(
-𝑛
-log
-⁡
-(
-𝑛
-)
-+
-9
-)
-=
-∞
-n→∞
-lim
-​
- ( 
-log(n)
-n
-​
- +9)=∞
-Porque 
-𝑛
-log
-⁡
-(
-𝑛
-)
-→
-∞
-log(n)
-n
-​
- →∞ cuando 
-𝑛
-→
-∞
-n→∞.
+## Parte 1: Comprobar si  
+**\( f(n) = n^3 + 9n^2\log(n) \in O(g(n)) \)**  
+con  
+**\( g(n) = n^2 \log(n) \)**
 
-Conclusión:
-𝑓
-(
-𝑛
-)
-∉
-𝑂
-(
-𝑔
-(
-𝑛
-)
-)
-f(n)∈
-/
-O(g(n))
-Ya que el cociente no está acotado superiormente por una constante. Por tanto, 
-𝑓
-(
-𝑛
-)
-f(n) crece más rápido que 
-𝑔
-(
-𝑛
-)
-g(n).
+### Evaluación del límite:
+\[
+\lim_{n \to \infty} \frac{f(n)}{g(n)} =
+\frac{n^3 + 9n^2\log(n)}{n^2\log(n)} =
+\frac{n^3}{n^2\log(n)} + \frac{9n^2\log(n)}{n^2\log(n)} =
+\frac{n}{\log(n)} + 9
+\]
 
-Parte 2: Comprobar si
-𝑓
-(
-𝑛
-)
-∈
-𝑂
-(
-𝑛
-2
-)
-f(n)∈O(n 
-2
- )
+### Conclusión:
+\[
+\lim_{n \to \infty} \left( \frac{n}{\log(n)} + 9 \right) = \infty \Rightarrow f(n) \notin O(g(n))
+\]
 
-Evaluamos:
-lim
-⁡
-𝑛
-→
-∞
-𝑓
-(
-𝑛
-)
-𝑛
-2
-=
-𝑛
-3
-+
-9
-𝑛
-2
-log
-⁡
-(
-𝑛
-)
-𝑛
-2
-=
-𝑛
-+
-9
-log
-⁡
-(
-𝑛
-)
-n→∞
-lim
-​
-  
-n 
-2
- 
-f(n)
-​
- = 
-n 
-2
- 
-n 
-3
- +9n 
-2
- log(n)
-​
- =n+9log(n)
-Análisis:
-lim
-⁡
-𝑛
-→
-∞
-(
-𝑛
-+
-9
-log
-⁡
-(
-𝑛
-)
-)
-=
-∞
-n→∞
-lim
-​
- (n+9log(n))=∞
-Conclusión:
-𝑓
-(
-𝑛
-)
-∉
-𝑂
-(
-𝑛
-2
-)
-f(n)∈
-/
-O(n 
-2
- )
-Ya que el cociente tiende a infinito. El crecimiento de 
-𝑓
-(
-𝑛
-)
-f(n) es mayor que 
-𝑛
-2
-n 
-2
- .
+---
 
-Parte 3: Evaluar la relación de crecimiento entre:
-𝑓
-(
-𝑛
-)
-=
-2
-𝑛
-f(n)=2 
-n
- 
+## Parte 2: Comprobar si  
+**\( f(n) \in O(n^2) \)**
 
-𝑔
-(
-𝑛
-)
-=
-2
-2
-𝑛
-=
-4
-𝑛
-g(n)=2 
-2n
- =4 
-n
- 
+### Evaluación:
+\[
+\lim_{n \to \infty} \frac{f(n)}{n^2} =
+\frac{n^3 + 9n^2\log(n)}{n^2} =
+n + 9\log(n)
+\]
 
-¿Pertenece 
-𝑓
-(
-𝑛
-)
-∈
-𝑂
-(
-𝑔
-(
-𝑛
-)
-)
-f(n)∈O(g(n))?
-Analizamos el cociente:
+### Conclusión:
+\[
+\lim_{n \to \infty} (n + 9\log(n)) = \infty \Rightarrow f(n) \notin O(n^2)
+\]
 
-𝑓
-(
-𝑛
-)
-𝑔
-(
-𝑛
-)
-=
-2
-𝑛
-4
-𝑛
-=
-2
-𝑛
-(
-2
-2
-)
-𝑛
-=
-2
-𝑛
-2
-2
-𝑛
-=
-2
-−
-𝑛
-g(n)
-f(n)
-​
- = 
-4 
-n
- 
-2 
-n
- 
-​
- = 
-(2 
-2
- ) 
-n
- 
-2 
-n
- 
-​
- = 
-2 
-2n
- 
-2 
-n
- 
-​
- =2 
-−n
- 
-lim
-⁡
-𝑛
-→
-∞
-2
-−
-𝑛
-=
-0
-n→∞
-lim
-​
- 2 
-−n
- =0
-Conclusión:
-𝑓
-(
-𝑛
-)
-∈
-𝑂
-(
-𝑔
-(
-𝑛
-)
-)
-f(n)∈O(g(n))
-Ya que el cociente tiende a 0. 
-𝑓
-(
-𝑛
-)
-f(n) crece mucho más lento que 
-𝑔
-(
-𝑛
-)
-g(n).
+---
 
-¿Pertenece 
-𝑔
-(
-𝑛
-)
-∈
-𝑂
-(
-𝑓
-(
-𝑛
-)
-)
-g(n)∈O(f(n))?
-𝑔
-(
-𝑛
-)
-𝑓
-(
-𝑛
-)
-=
-4
-𝑛
-2
-𝑛
-=
-2
-𝑛
-f(n)
-g(n)
-​
- = 
-2 
-n
- 
-4 
-n
- 
-​
- =2 
-n
- 
-lim
-⁡
-𝑛
-→
-∞
-2
-𝑛
-=
-∞
-n→∞
-lim
-​
- 2 
-n
- =∞
-Conclusión:
-𝑔
-(
-𝑛
-)
-∉
-𝑂
-(
-𝑓
-(
-𝑛
-)
-)
-g(n)∈
-/
-O(f(n))
-Porque el cociente crece indefinidamente. 
-𝑔
-(
-𝑛
-)
-g(n) crece más rápido que 
-𝑓
-(
-𝑛
-)
-f(n).
+## Parte 3: Comparación entre funciones exponenciales
+
+Sean:
+- \( f(n) = 2^n \)
+- \( g(n) = 2^{2n} = 4^n \)
+
+### Verificar si \( f(n) \in O(g(n)) \):
+
+\[
+\frac{f(n)}{g(n)} = \frac{2^n}{4^n} = \frac{2^n}{(2^2)^n} = \frac{2^n}{2^{2n}} = 2^{-n}
+\]
+
+\[
+\lim_{n \to \infty} 2^{-n} = 0 \Rightarrow f(n) \in O(g(n))
+\]
+
+---
+
+### Verificar si \( g(n) \in O(f(n)) \):
+
+\[
+\frac{g(n)}{f(n)} = \frac{4^n}{2^n} = 2^n
+\]
+
+\[
+\lim_{n \to \infty} 2^n = \infty \Rightarrow g(n) \notin O(f(n))
+\]
+
+---
+
+## Resumen
+
+| Relación                   | Resultado        | Justificación                                          |
+|---------------------------|------------------|--------------------------------------------------------|
+| \( f(n) \in O(g(n)) \)     | ❌ No             | \( f(n) \) crece más rápido que \( g(n) \)            |
+| \( f(n) \in O(n^2) \)      | ❌ No             | Cociente tiende a infinito                             |
+| \( 2^n \in O(4^n) \)       | ✅ Sí             | Cociente tiende a 0                                    |
+| \( 4^n \in O(2^n) \)       | ❌ No             | Cociente tiende a infinito                             |
+
