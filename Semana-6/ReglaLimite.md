@@ -2,6 +2,10 @@
 
 ---
 
+Dado: $f(n) = n^3 + 9n^2\log(n))$ y $g(n) = n^2\log(n)$
+* Comprobar $f(n) \in O(g(n))$
+* Comprobar $f(n) \notin O(n^2)$
+  
 ## Parte 1: Comprobar si `f(n) ∈ O(g(n))`
 
 ### Dados:
