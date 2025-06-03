@@ -1,1 +1,42 @@
-lero lero
+# 2.3 Designing Algorithms - Cormen et al. (2022)
+
+## 1. Introducción
+Este subtema aborda metodologías para **diseñar algoritmos eficientes**, centrándose en técnicas generales como:
+- **Divide y vencerás** (Divide and Conquer).
+- **Enfoque iterativo vs. recursivo**.
+- **Uso de invariantes de bucle** para verificación.
+
+---
+
+## 2. Técnicas Clave
+
+### a) Divide y Vencerás
+- **Definición**: Dividir el problema en subproblemas más pequeños, resolverlos recursivamente y combinar sus soluciones.
+- **Pasos**:
+  1. **Divide**: Partir el problema en subproblemas similares.
+  2. **Conquista**: Resolver los subproblemas (usualmente recursivamente).
+  3. **Combina**: Integrar las soluciones parciales.
+- **Ejemplo**: Merge Sort (`Θ(n log n)`).
+
+### b) Invariantes de Bucle
+- **Definición**: Propiedad que se mantiene verdadera antes/durante/después de cada iteración de un bucle.
+- **Objetivo**: Demostrar **correctitud** del algoritmo.
+- **Ejemplo**: En Insertion Sort, el invariante es que el subarreglo `A[1..j-1]` está siempre ordenado.
+
+### c) Iterativo vs. Recursivo
+- **Iterativo**: Usa bucles (ej: Insertion Sort). Menor overhead de memoria.
+- **Recursivo**: Llama a sí mismo (ej: Merge Sort). Más intuitivo para problemas jerárquicos.
+
+---
+
+## 3. Ejemplo: Insertion Sort
+- **Enfoque**: Iterativo con invariante de bucle.
+- **Pseudocódigo clave**:
+  ```plaintext
+  for j = 2 to A.length
+      key = A[j]
+      i = j - 1
+      while i > 0 and A[i] > key
+          A[i+1] = A[i]
+          i = i - 1
+      A[i+1] = key
