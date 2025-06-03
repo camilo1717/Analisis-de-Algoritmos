@@ -2,25 +2,6 @@
 
 Este apartado se centra en el impacto de las estructuras de control (como condicionales, bucles y bloques secuenciales) sobre la eficiencia computacional de los algoritmos. Se analiza cómo el comportamiento temporal de un algoritmo está influenciado directamente por estas estructuras, y se establece una base para evaluar su complejidad en el peor caso, caso promedio y mejor caso.
 
-El capítulo descompone el análisis en componentes básicos:
-
-**Secuencias:**
-
-La complejidad es la suma de las operaciones individuales.
-
-**Condicionales (if-else):**
-
-Se evalúan distintas ramas según su probabilidad y su costo.
-
-**Bucles (for, while):** 
-
-Se consideran el número de iteraciones y el costo de cada una. En bucles anidados, la complejidad se multiplica según los niveles de anidamiento.
-
-El análisis se complementa con ejemplos que muestran cómo pequeñas diferencias en la estructura de control pueden cambiar drásticamente la eficiencia. También se introduce la notación asintótica como herramienta clave para expresar estos análisis, destacando la importancia del crecimiento del tiempo de ejecución respecto al tamaño del problema.
-
-
-En esta sección, los autores abordan cómo analizar el tiempo de ejecución de algoritmos a través del estudio de las estructuras de control fundamentales: secuencias, condicionales y bucles. El análisis se basa principalmente en determinar la complejidad temporal, es decir, cómo crece el tiempo de ejecución en función del tamaño de entrada.
-
 1. Secuencias:
 Cuando un algoritmo ejecuta instrucciones una tras otra, la complejidad total es simplemente la suma de los tiempos de cada instrucción. Por ejemplo, si hay tres operaciones con complejidades 
 𝑇
