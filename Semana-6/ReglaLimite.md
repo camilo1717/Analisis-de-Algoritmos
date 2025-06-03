@@ -63,7 +63,7 @@ Como el límite tiende a 0, **f(n) ∈ O(g(n))**
 
 ---
 
-📘 **Nota**: Big O (`O(g(n))`) representa una cota superior del crecimiento de una función. Si `f(n) ∈ O(g(n))`, entonces `f(n)` no crece más rápido que `g(n)` hasta una constante multiplicativa.
+**Nota**: Big O (`O(g(n))`) representa una cota superior del crecimiento de una función. Si `f(n) ∈ O(g(n))`, entonces `f(n)` no crece más rápido que `g(n)` hasta una constante multiplicativa.
 
 
 
