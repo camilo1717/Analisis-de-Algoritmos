@@ -1,8 +1,9 @@
-Tema 3: Notación Asintótica
-Introducción
+## Tema 3: Notación Asintótica
+
+
 En este capítulo, los autores introducen la notación asintótica como una herramienta fundamental para describir y analizar la eficiencia de los algoritmos, especialmente en términos de tiempo de ejecución y uso de recursos, en función del tamaño de la entrada.
 
-Objetivo de la Notación Asintótica
+**Objetivo de la Notación Asintótica:**
 El propósito principal de la notación asintótica es proporcionar una forma de expresar el comportamiento de un algoritmo cuando el tamaño de la entrada tiende a infinito, es decir, su comportamiento en el peor de los casos o en casos límite. Esto permite comparar algoritmos y seleccionar el más eficiente para un problema dado.
 
 Tipos de Notación Asintótica
