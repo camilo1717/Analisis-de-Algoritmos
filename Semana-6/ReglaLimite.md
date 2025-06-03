@@ -56,10 +56,10 @@ Como el límite tiende a 0, **f(n) ∈ O(g(n))**
 
 | Relación                        | Resultado | Justificación                            |
 |--------------------------------|-----------|------------------------------------------|
-| `f(n) ∈ O(g(n))`               | ❌ No     | f(n) crece más rápido que g(n)           |
-| `f(n) ∈ O(n²)`                 | ❌ No     | El cociente tiende a infinito            |
-| `2ⁿ ∈ O(4ⁿ)`                   | ✅ Sí     | El cociente tiende a 0                   |
-| `4ⁿ ∈ O(2ⁿ)`                   | ❌ No     | El cociente tiende a infinito            |
+| `f(n) ∈ O(g(n))`               |  No     | f(n) crece más rápido que g(n)           |
+| `f(n) ∈ O(n²)`                 |  No     | El cociente tiende a infinito            |
+| `2ⁿ ∈ O(4ⁿ)`                   |  Sí     | El cociente tiende a 0                   |
+| `4ⁿ ∈ O(2ⁿ)`                   |  No     | El cociente tiende a infinito            |
 
 ---
 
