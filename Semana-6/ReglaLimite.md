@@ -1,78 +1,65 @@
 # Análisis de Complejidad Asintótica
 
-## Parte 1: Comprobar si  
-**\( f(n) = n^3 + 9n^2\log(n) \in O(g(n)) \)**  
-con  
-**\( g(n) = n^2 \log(n) \)**
+---
 
-### Evaluación del límite:
-\[
-\lim_{n \to \infty} \frac{f(n)}{g(n)} =
-\frac{n^3 + 9n^2\log(n)}{n^2\log(n)} =
-\frac{n^3}{n^2\log(n)} + \frac{9n^2\log(n)}{n^2\log(n)} =
-\frac{n}{\log(n)} + 9
-\]
+## Parte 1: Comprobar si `f(n) ∈ O(g(n))`
 
-### Conclusión:
-\[
-\lim_{n \to \infty} \left( \frac{n}{\log(n)} + 9 \right) = \infty \Rightarrow f(n) \notin O(g(n))
-\]
+### Dados:
+- `f(n) = n³ + 9n² log(n)`
+- `g(n) = n² log(n)`
+
+### Límite:
+
+
+Como `lim n→∞ (n / log(n)) = ∞`, entonces:
+
+❌ **f(n) ∉ O(g(n))**
 
 ---
 
-## Parte 2: Comprobar si  
-**\( f(n) \in O(n^2) \)**
+## ❌ Parte 2: Comprobar si `f(n) ∈ O(n²)`
 
-### Evaluación:
-\[
-\lim_{n \to \infty} \frac{f(n)}{n^2} =
-\frac{n^3 + 9n^2\log(n)}{n^2} =
-n + 9\log(n)
-\]
+### Límite:
 
-### Conclusión:
-\[
-\lim_{n \to \infty} (n + 9\log(n)) = \infty \Rightarrow f(n) \notin O(n^2)
-\]
+
+📈 Como `lim n→∞ (n + 9 log(n)) = ∞`, entonces:
+
+❌ **f(n) ∉ O(n²)**
 
 ---
 
 ## Parte 3: Comparación entre funciones exponenciales
 
-Sean:
-- \( f(n) = 2^n \)
-- \( g(n) = 2^{2n} = 4^n \)
-
-### Verificar si \( f(n) \in O(g(n)) \):
-
-\[
-\frac{f(n)}{g(n)} = \frac{2^n}{4^n} = \frac{2^n}{(2^2)^n} = \frac{2^n}{2^{2n}} = 2^{-n}
-\]
-
-\[
-\lim_{n \to \infty} 2^{-n} = 0 \Rightarrow f(n) \in O(g(n))
-\]
+### Sean:
+- `f(n) = 2ⁿ`
+- `g(n) = 4ⁿ = 2²ⁿ`
 
 ---
 
-### Verificar si \( g(n) \in O(f(n)) \):
+### Verificar si `f(n) ∈ O(g(n))`
 
-\[
-\frac{g(n)}{f(n)} = \frac{4^n}{2^n} = 2^n
-\]
+Como el límite tiende a 0, **f(n) ∈ O(g(n))**
 
-\[
-\lim_{n \to \infty} 2^n = \infty \Rightarrow g(n) \notin O(f(n))
-\]
+---
+
+### Verificar si `g(n) ∈ O(f(n))`
+
+❌ Como el límite tiende a ∞, **g(n) ∉ O(f(n))**
 
 ---
 
 ## Resumen
 
-| Relación                   | Resultado        | Justificación                                          |
-|---------------------------|------------------|--------------------------------------------------------|
-| \( f(n) \in O(g(n)) \)     | ❌ No             | \( f(n) \) crece más rápido que \( g(n) \)            |
-| \( f(n) \in O(n^2) \)      | ❌ No             | Cociente tiende a infinito                             |
-| \( 2^n \in O(4^n) \)       | ✅ Sí             | Cociente tiende a 0                                    |
-| \( 4^n \in O(2^n) \)       | ❌ No             | Cociente tiende a infinito                             |
+| Relación                        | Resultado | Justificación                            |
+|--------------------------------|-----------|------------------------------------------|
+| `f(n) ∈ O(g(n))`               | ❌ No     | f(n) crece más rápido que g(n)           |
+| `f(n) ∈ O(n²)`                 | ❌ No     | El cociente tiende a infinito            |
+| `2ⁿ ∈ O(4ⁿ)`                   | ✅ Sí     | El cociente tiende a 0                   |
+| `4ⁿ ∈ O(2ⁿ)`                   | ❌ No     | El cociente tiende a infinito            |
+
+---
+
+📘 **Nota**: Big O (`O(g(n))`) representa una cota superior del crecimiento de una función. Si `f(n) ∈ O(g(n))`, entonces `f(n)` no crece más rápido que `g(n)` hasta una constante multiplicativa.
+
+
 
