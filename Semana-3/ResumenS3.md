@@ -1,4 +1,4 @@
-Diseño de Algoritmos (Cormen et al., 2022)
+## Diseño de Algoritmos (Cormen et al., 2022)
 
 El diseño de algoritmos es un aspecto fundamental de la informática, ya que permite desarrollar soluciones eficientes para problemas computacionales. En esta sección, Cormen et al. presentan diversas estrategias y principios clave para la creación de algoritmos efectivos.
 
