@@ -11,10 +11,4 @@ Se presentan algunas notaciones matemáticas útiles para describir algoritmos, 
 
 Por último, se subraya la importancia de la verificación y análisis de algoritmos. No basta con que un algoritmo funcione en algunos casos; debe ser correcto para todos los casos posibles y, además, eficiente.
 
-```java
-public class HolaMundo {
-    public static void main(String[] args) {
-        System.out.println("¡Hola, Mundo!");
-    }
-}
-```
+
