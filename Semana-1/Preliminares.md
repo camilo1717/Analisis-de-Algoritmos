@@ -12,3 +12,5 @@ Se presentan algunas notaciones matemáticas útiles para describir algoritmos, 
 Por último, se subraya la importancia de la verificación y análisis de algoritmos. No basta con que un algoritmo funcione en algunos casos; debe ser correcto para todos los casos posibles y, además, eficiente.
 
 
+
+<img width="1393" height="873" alt="Captura de pantalla 2026-03-29 182816" src="https://github.com/user-attachments/assets/d067c135-c4d9-4af8-a974-88e30e4d58e8" />
