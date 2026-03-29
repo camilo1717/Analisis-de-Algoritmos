@@ -13,4 +13,4 @@ Por último, se subraya la importancia de la verificación y análisis de algori
 
 
 
-<img width="1393" height="873" alt="Captura de pantalla 2026-03-29 182816" src="https://github.com/user-attachments/assets/d067c135-c4d9-4af8-a974-88e30e4d58e8" />
+
