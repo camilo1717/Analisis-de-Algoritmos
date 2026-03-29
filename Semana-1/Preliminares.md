@@ -10,3 +10,11 @@ Luego, el capítulo introduce el concepto de estructura de datos, que son formas
 Se presentan algunas notaciones matemáticas útiles para describir algoritmos, como las sumatorias, productos y fórmulas de conteo. Además, se introduce la notación asintótica (O grande), que permite analizar el comportamiento de un algoritmo a medida que el tamaño del problema crece, enfocándose más en la eficiencia general que en detalles específicos de implementación.
 
 Por último, se subraya la importancia de la verificación y análisis de algoritmos. No basta con que un algoritmo funcione en algunos casos; debe ser correcto para todos los casos posibles y, además, eficiente.
+
+```java
+public class HolaMundo {
+    public static void main(String[] args) {
+        System.out.println("¡Hola, Mundo!");
+    }
+}
+```
